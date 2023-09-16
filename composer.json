@@ -1,0 +1,39 @@
+{
+    "name": "mykholy/laravel-menu",
+    "description": "drag and drop menu generator like wordpress for laravel 5",
+    "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
+    "authors": [
+    	{
+            "name": "Ahmed Elkholy",
+            "email": "mykholys30@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Cristian Garcia",
+            "email": "informacion@cristiangarcia.co",
+            "role" : "Original Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "5.* || 6.* || 7.* || 8.*",
+        "astrotomic/laravel-translatable": "11.9"
+    },
+    "autoload": {
+        "psr-4": {
+          "Mykholy\\Menu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mykholy\\Menu\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Mykholy\\Menu\\Facades\\Menu"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
